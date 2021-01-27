@@ -40,7 +40,7 @@ export default function ButtonAppBar() {
 
     return (
     <div className={classes.root}>
-        <AppBar position="static">
+        <AppBar position="sticky">
         <Toolbar>
         <Box mt={8}>
             <Copyright />
