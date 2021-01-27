@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
     title: {
     flexGrow: 1,
     },
+    
 }));
 
 export default function ButtonAppBar() {
@@ -44,6 +45,7 @@ export default function ButtonAppBar() {
         <Toolbar>
         <Box mt={8}>
             <Copyright />
+        
         </Box>
             <Typography variant="h7" className={classes.title}>
             Terms
