@@ -40,13 +40,13 @@ export default function ButtonAppBar() {
 
     return (
     <div className={classes.root}>
-        <AppBar position="sticky">
+        <AppBar position="static">
         <Toolbar>
         <Box mt={8}>
             <Copyright />
         </Box>
             <Typography variant="h7" className={classes.title}>
-            Terms
+            Terms change
             </Typography>
             <Typography variant="h7" className={classes.title}>
             Privacy
