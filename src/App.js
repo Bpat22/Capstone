@@ -8,12 +8,15 @@ import Footer from './components/Footer';
 import About from './components/AboutUs';
 import Contact from './components/ContactUs';
 import Home from './components/Home';
+import Protected from './components/Protected';
+import Dashboard from './components/Dashboard'
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
       <Header />
+      <br />< br />
         <Switch>
         <Route exact path = "/home" component = {Home} />
 
@@ -22,8 +25,11 @@ function App() {
 
           <Route exact path = "/login" component = {Login} />
           <Route exact path = "/register" component = {Register} />
+
+          <Route exact path = "/login" component = {Login} />
+
         </Switch>
-      <Footer />  
+      {/* <Footer />   */}
 
       </BrowserRouter>      
     </div>

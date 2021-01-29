@@ -46,31 +46,23 @@ const Header = () => {
                 <HomeIcon />
                 <div className={classes.container}>
                 <Typography variant = 'overline' className={classes.container}>
-                    Home
+                    <Link to = '/home'>Home</Link>
                 </Typography>
                 <Typography variant = 'overline' className={classes.container}>
-                    <Link to = '/about'>
-                    About Us
-                    </Link>
+                    <Link to = '/about'>About Us</Link>
                 </Typography>
                 <Typography variant = 'overline' className={classes.container}>
-                    <Link to = '/contact'>
-                    Contact Us
-                    </Link>
+                    <Link to = '/contact'>Contact Us</Link>
                 </Typography>
                 </div>
                 <div className={classes.button}>
                 <Typography variant = 'overline'>
-                    <Link to = '/login'> 
-                    LogIn     
-                    </Link>                    
+                    <Link to = '/login'>LogIn</Link>                    
                 </Typography>
                 </div>
                 <div className={classes.button}>
                 <Typography variant = 'overline'>
-                    <Link to = '/register'>
-                    Register
-                    </Link>
+                    <Link to = '/register'>Register</Link>
                 </Typography>
                 </div>
             
