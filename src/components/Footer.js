@@ -40,6 +40,11 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     padding: theme.spacing(1, 2),
     marginTop: "auto",
+     position:"fixed",
+left:0,
+bottom:0,
+right:0,
+      backgroundColor: "rbg(65,83,173)"
   },
   menuButton: {
     marginLeft: theme.spacing(2),
@@ -57,7 +62,7 @@ export default function StickyFooter() {
       <div className={classes.root}>
         <CssBaseline />
 
-        <footer className={classes.footer}>
+        <footer className={classes.footer} id="foot">
           <Container maxWidth="sm">
             <Toolbar>
               <Typography variant="h7" className={classes.title}>

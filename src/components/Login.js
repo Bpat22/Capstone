@@ -13,8 +13,9 @@ class Login extends Component {
       body: JSON.stringify(this.state),
     }).then((result) => {
       result.json().then((resp) => {
-        console.log(resp.success.token);
-        localStorage.setItem("auth", JSON.stringify(resp.success.token));
+          console.log(resp);
+        //console.log(resp.success.token);
+        //localStorage.setItem("auth", JSON.stringify(resp.success.token));
       });
     });
   }
@@ -23,7 +24,7 @@ class Login extends Component {
     return (
       <div>
         <input
-          type="text"
+          type="text" placeholder = "username"
           onChange={(e) => {
             this.setState({ username: e.target.value });
           }}
@@ -31,7 +32,7 @@ class Login extends Component {
         <br />
         <br />
         <input
-          type="password"
+          type="password" placeholder="password"
           onChange={(e) => {
             this.setState({ password: e.target.value });
           }}

@@ -36,4 +36,16 @@
     transform: rotate(360deg);
   }
 }
+footer{
+position:fixed;
+left:0;
+bottom:0;
+right:0;
+    
+    background-color: rgb(65,83,173);
+        
+}
+.classes.footer{
+    
+}
 
