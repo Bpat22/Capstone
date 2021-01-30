@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Login extends Component {
   login() {
@@ -13,7 +14,7 @@ class Login extends Component {
     }).then((result) => {
       result.json().then((resp) => {
         console.log(resp.success.token);
-        localStorage.setItem("auth", JSON.stringify(resp.success.token))
+        localStorage.setItem("auth", JSON.stringify(resp.success.token));
       });
     });
   }
@@ -21,17 +22,30 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <input type="text" onChange={(e) => {
+        <input
+          type="text"
+          onChange={(e) => {
             this.setState({ username: e.target.value });
           }}
         />
-        <br /><br />
-        <input type="password" onChange={(e) => {
+        <br />
+        <br />
+        <input
+          type="password"
+          onChange={(e) => {
             this.setState({ password: e.target.value });
           }}
         />
-        <br /><br />
+        <br />
+        <br />
         <button onClick={() => this.login()}> Login</button>
+        <br />
+        <br />
+        "Not Enrolled?"
+        <Link to="/register">Sign Up</Link>
+        Now
+        <br />
+        <br />
       </div>
     );
   }

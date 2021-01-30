@@ -43,6 +43,9 @@ const Header = () => {
         <AppBar position = 'sticky'>
             <div className={classes.root}>
             <Toolbar>
+                <div class="logo">
+                    <a class="logo-link" link to ="/home" />
+                </div>
                 <HomeIcon />
                 <div className={classes.container}>
                 <Typography variant = 'overline' className={classes.container}>

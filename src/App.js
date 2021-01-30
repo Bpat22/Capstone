@@ -4,7 +4,7 @@ import Login from './components/Login';
 import Register from './components/Register'
 import { Route, BrowserRouter, Switch} from 'react-router-dom';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import StickyFooter from './components/Footer';
 import About from './components/AboutUs';
 import Contact from './components/ContactUs';
 import Home from './components/Home';
@@ -29,8 +29,7 @@ function App() {
           <Route exact path = "/login" component = {Login} />
 
         </Switch>
-      {/* <Footer />   */}
-
+        <StickyFooter />  
       </BrowserRouter>      
     </div>
   );

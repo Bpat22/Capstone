@@ -66,6 +66,9 @@ class Register extends Component {
           <br />
 
           <button onClick={() => this.isRegister()}> Register</button>
+          <br />
+          <br />          
+          <br />       
         </div>
       </form>
     );
