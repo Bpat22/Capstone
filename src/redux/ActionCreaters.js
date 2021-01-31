@@ -1,6 +1,13 @@
 import * as ActionTypes from './ActionTypes';
 import { baseUrl } from '../shared/baseUrl';
+import { CHECKING_ACCOUNTS } from '../shared/checkingAccounts';
+import { SAVINGS_ACCOUNT } from '../shared/savingsAccount';
+import { CDACCOUNTS } from '../shared/cdAccounts';
 
+export const fetchUser = () => (dispatch) => {
+    dispatch(userLoading(true));
+    
+}
 
 //Checking
 export const fetchCheckingAccounts = () => (dispatch) => {

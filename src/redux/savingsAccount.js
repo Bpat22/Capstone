@@ -1,10 +1,10 @@
 import * as ActionTypes from './ActionTypes';
 
-export const SavingsAccounts = (state = {
+export const SavingsAccount = (state = {
         isLoading: true,
         errMess: null,
-        leaders: []
-        }, action) => {
+        account: []
+}, action) => {
     switch (action.type) {
         case ActionTypes.ADD_SAVINGS_ACCOUNT:
             return { ...state, isLoading: false, errMess: null, account: action.payload };

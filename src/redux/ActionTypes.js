@@ -10,3 +10,6 @@ export const ADD_CDACCOUNT = 'ADD_CDACCOUNT';
 export const CDACCOUNT_LOADING = 'CDACCOUNT_LOADING';
 export const CDACCOUNT_FAILED = 'CDACCOUNT_FAILED';
 
+export const ADD_USER = "ADD_USER";
+export const USER_LOADING = "USER_LOADING";
+export const USER_FAILED = "USER_FAILED";

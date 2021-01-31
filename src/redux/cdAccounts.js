@@ -3,7 +3,7 @@ import * as ActionTypes from './ActionTypes';
 export const CDAccounts = (state = {
         isLoading: true,
         errMess: null,
-        leaders: []
+        accounts: []
         }, action) => {
     switch (action.type) {
         case ActionTypes.ADD_CDACCOUNT:
