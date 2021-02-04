@@ -26,7 +26,7 @@ function App() {
           <Route exact path = "/login" component = {Login} />
           <Route exact path = "/register" component = {Register} />
 
-          <Route exact path = "/login" component = {Login} />
+          <Route exact path = "/Dashboard" component = {Dashboard} />
 
         </Switch>
         <StickyFooter />  

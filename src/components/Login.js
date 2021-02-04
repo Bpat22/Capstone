@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 class Login extends Component {
+   
   login() {
     console.warn("state", this.state);
     fetch("http://localhost:8080/authenticate", {
@@ -13,9 +14,13 @@ class Login extends Component {
       body: JSON.stringify(this.state),
     }).then((result) => {
       result.json().then((resp) => {
-          console.log(resp);
-        //console.log(resp.success.token);
-        //localStorage.setItem("auth", JSON.stringify(resp.success.token));
+        console.log(resp);
+        console.log(resp.jwt);
+        localStorage.setItem("auth", resp.jwt);
+       // let history = useHistory();
+          
+       this.props.history.push("/Dashboard");          
+          
       });
     });
   }

@@ -8,7 +8,7 @@ class Dashboard extends Component {
         }
     }
     componentDidMount(){
-        fetch('http://localhost:8080/AccountHolders').then((result) =>{
+        fetch('http://localhost:8080/Me').then((result) =>{
             result.json().then((data) =>{
                 console.log("data", data);
                 this.setState({items:data})
@@ -37,3 +37,9 @@ class Dashboard extends Component {
     }
 }
 export default Dashboard;
+//make fetch
+//validate success response
+//dispatch response to redux action
+//passed as payload in action
+//reducer takes info and updates redux state
+

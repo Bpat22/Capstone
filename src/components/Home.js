@@ -3,9 +3,12 @@ import React from 'react';
 const Home = () => {
 
     return (
-        <div>
-            Home 
-        </div>
+       
+            <div class = "main">
+            <h1>Welcome to Merit Bank</h1>
+            <login/>
+            </div>
+       
     )
 
 }
